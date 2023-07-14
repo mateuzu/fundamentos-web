@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title> 
+</head>
+<body> 
+    <h1>Turma 65</h1> <!-- h1 = Título principal do conteúdo, por padrão o recomendado é utilizar somente um h1 por página-->
+    <h2>Iniciando o Front End</h2> <!-- h2 = subtítulo-->
+
+    <ul style="list-style-type: circle;"> <!-- ul = lista não ordenada-->
+        <li> Red Dead Redemption</li> <!-- li = item da lista, toda lista (ul ou ol) depende de um item para ser exibida -->
+        <li> The Last of Us</li>
+        <li> God of War</li>
+    </ul>
+
+    <figure> <!-- Tag para armazenar uma imagem e adicionar uma legenda -->
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDIpIiKl7uu59Nq5EMpToDNH2e4IJ_fwXblCAh8SlTJNPakQP8hamjhsLQ4caE2LFSvPU&usqp=CAU"> <!-- img src = TAG para adicionar imagem | src = caminho da imagem (pode ser local ou uma URL) -->
+    <figcaption> Red Dead Redemption 2 - Wallpaper </figcaption> <!-- Legenda da imagem-->
+    </figure>
+
+</body>
+</html>
+
+<!--
+    COMENTÁRIOS:
+    ESTRUTURA BÁSICA DE UM CÓDIGO HTML
+
+    <!DOCTYPE html> "indica que será utilizada a versão mais recente do HTML para leitura do navegador"
+    <html lang="pt-br"> "html = Propriedade para definir a estrutura | lang = linguagem que a estrutura será escrita no body"
+        <head> "O navegador inicia a leitura da estrutura através dessa TAG, dessa forma é necessário informar algumas configurações iniciais como título, consumo de API, padrão de codificação etc"
+            <meta charset="UTF-8"> "charset UTF-8 = Define o padrão de codificação com caracteres especiais, como ç, ~, ^, etc"
+            <meta name="viewport" "content="width=device-width, initial-scale=1.0"> name | content = Responsividade da aplicação, para que o conteúdo possa se adaptar a diferentes tamanhos de telas"
+            <title>Home</title> "Define o título da página"
+            <body> "Corpo da página, tudo que estiver dentro do Body será renderizado na página e exibido ao usuário"
+            </body>
+        </head>
+    </html>
+
+    TAG meta = Utilizada para carregar metadados (informações não-visiveis necessárias para aplicação funcionar)
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> Força o navegador INTERNET EXPLORER à adaptar o conteúdo semelhante ao EDGE
+    TAG = Codigo usado em HTML para exibir um conteúdo, é uma estrutura/caixa que guarda um conteúdo para exibição
+    ATRIBUTOS = Os atributos de uma tag são responsáveis por alterar o comportamento padrão dessa TAG
+
+    ASSETS = Pasta onde é adicionado alguns acessos externos do arquivo html, nessa pasta serão adicionados arquivos .css, javascript e imagens/vídeos, por exemplo
+    style = propriedade que define o estilo (forma, cor, tamanho) de uma TAG
+-->

@@ -5,51 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Front End</title>
+    <link rel="stylesheet" href="assets/img/css/style.css">
 </head>
 <body>
-    <ul>
-        <li> <!-- target="_blank" = Abre uma nova guia para a URL referenciada-->
-            <a href="index.html"> Front End </a>
-        </li> 
-        <li>
-            <a href="html.html"> HTML </a>
-        </li>
-        <li>
-            <a href="css.html"> CSS </a>
-        </li>
-        <li>
-            <a href="javascript.html"> JavaScript </a>
-        </li>
-    </ul>
+    <div class="menu-acima">
+        <ul id="menu">
+            <li> <!-- target="_blank" = Abre uma nova guia para a URL referenciada-->
+                <a href="index.html"> <img class="tm-social" src="assets/img/front-end.png" alt=""></a>
+            </li> 
+            <li>
+                <a href="html.html"><img class="tm-social" src="assets/img/html-5.png" alt=""> </a>
+            </li>
+            <li>
+                <a href="css.html"> <img class="tm-social" src="assets/img/css-3.png" alt=""> </a>
+            </li>
+            <li>
+                <a href="javascript.html"> <img class="tm-social" src="assets/img/js.png" alt=""> </a>
+            </li>
+        </ul>
+    </div>
 
-    <h1>Sobre Front End</h1>
-    <p>
-        O Front-end, de forma sucinta, é toda parte visual de um site, a parte com a qual o usuário interage diretamente, ou seja, o código do sistema que roda no navegador.
-        O profissional responsável por trabalhar nessa área de um projeto desenvolve o código para a interface gráfica, normalmente por meio de linguagens. Um desenvolvedor Front-end normalmente trabalha criando toda a parte visual dos sites por meio de linguagens de marcação (HTML), estilização (CSS) e programação (JavaScript e TypeScript), além de bibliotecas (React e Bootstrap) e frameworks (Angular, VUE.js e NEXT.js). Abaixo vemos a página principal de um Front-end que irá consumir os Recursos e os Endpoints de um Back-end.
+    <h1 class="center">Sobre Front End</h1>
+    <div class="container">
+        <div>
+            <p class="justify">
+                O Front-end, de forma sucinta, é toda parte visual de um site, a parte com a qual o usuário interage diretamente, ou seja, o código do sistema que roda no navegador.
+                O profissional responsável por trabalhar nessa área de um projeto desenvolve o código para a interface gráfica, normalmente por meio de linguagens. Um desenvolvedor Front-end normalmente trabalha criando toda a parte visual dos sites por meio de linguagens de marcação (HTML), estilização (CSS) e programação (JavaScript e TypeScript), além de bibliotecas (React e Bootstrap) e frameworks (Angular, VUE.js e NEXT.js). Abaixo vemos a página principal de um Front-end que irá consumir os Recursos e os Endpoints de um Back-end.
+        
+            </p>
+            <p class="justify">
+                No desenvolvimento front-end, os profissionais utilizam linguagens como HTML (Hypertext Markup Language) para criar a estrutura do conteúdo, CSS (Cascading Style Sheets) para adicionar estilo e aparência visual, e JavaScript para tornar a página interativa e dinâmica.
+                Além disso, o front-end envolve garantir que o site ou aplicativo seja responsivo, o que significa que ele é adaptável a diferentes tamanhos de tela e dispositivos, como computadores, tablets e smartphones. Também inclui a otimização do desempenho, para que a página carregue rapidamente e seja fácil de usar.
+            </p>
+        
+            <h3 class="center">Os três pilares do Front End</h3>
+        </div>
 
-    </p>
-    <p>
-        No desenvolvimento front-end, os profissionais utilizam linguagens como HTML (Hypertext Markup Language) para criar a estrutura do conteúdo, CSS (Cascading Style Sheets) para adicionar estilo e aparência visual, e JavaScript para tornar a página interativa e dinâmica.
-        Além disso, o front-end envolve garantir que o site ou aplicativo seja responsivo, o que significa que ele é adaptável a diferentes tamanhos de tela e dispositivos, como computadores, tablets e smartphones. Também inclui a otimização do desempenho, para que a página carregue rapidamente e seja fácil de usar.
-    </p>
+        <div>
+            <figure>
+                <img src="assets/img/pilares.jpg" alt="Três pilares do Front End">
+            </figure>
+        </div>
+    </div>
+    
 
-    <h3>Os três pilares do Front End</h3>
-    <figure>
-        <img src="assets/img/pilares.jpg" alt="Três pilares do Front End">
-    </figure>
-
-    <h2> Explicação em vídeo: </h2>
+    <h2 class="center"> Explicação em vídeo: </h2>
     <!-- iframe = fragmento de um site externo dentro do seu site-->
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/Em0R3csNMVE" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-    </iframe>
+    <div class="container mb-50">
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/Em0R3csNMVE" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
    
+    <hr> <!-- Separação de sessão -->
+    <footer>
+        <div class="container">
+            <a href="https://www.linkedin.com/in/mateus-ferreira-a55691234?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BK1%2FATHAkQW2UnLouA31ncg%3D%3D" target="_blank"> 
+                <img class="tm-social" src="assets/img/linkedin.png" alt="">
+            </a>
+            <a href="https://github.com/mateuzu" target="_blank">
+                <img class="tm-social" src="assets/img/github.png" alt="">
+            </a>
+        </div>
+        <p class="center">
+            Todos os direitos reservados: Mateus Ferreira &copy;
+        </p>
+    </footer>
 
 </body>
 </html>

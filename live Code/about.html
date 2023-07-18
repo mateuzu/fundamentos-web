@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+
+    <!-- 
+        TAG style sendo atribuída como uma configuração dentro da TAG HEAD Para estilizar várias TAGS similares de uma vez = CSS interno
+
+        tag (p) = Estiliza todas as TAGS
+        #id = Estiliza uma TAG individualmente
+        .class = Estiliza mais de uma TAG onde o atributo class estiver definido (não todas)
+    
+    <style> 
+        p{
+            font-size: 20px !important;
+        }
+
+        #p-first{ 
+            font-weight: bold;
+            font-size: 40px;
+        }
+
+        .p-color{
+            color: crimson;
+            font-size: 50px;
+        }
+
+    </style> -->
+
+    <!-- link rel="stylesheet" informa que será incorporado um arquivo .css para o código HTML
+         href = caminho do arquivo CSS-->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Incorporando um arquivo, no caso traz um arquivo CSS externo para dentro do arquivo HTML-->
+</head>
+<body>
+
+    <p id="p-first"> <!-- Atribuindo o id para a TAG ser estilizada individualmente, deve ser único dentro do arquivo HTML-->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus debitis aut laborum quos culpa eaque molestiae, veritatis quidem sequi fugit omnis blanditiis numquam minima accusamus rem dolorem obcaecati suscipit ipsam! </p>
+
+    <p class="p-color"> <!-- Definindo o atributo class para modificar todas TAGS que sejam da mesma classe -->
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus debitis aut laborum quos culpa eaque molestiae, veritatis quidem sequi fugit omnis blanditiis numquam minima accusamus rem dolorem obcaecati suscipit ipsam! </p>
+
+    <p class="p-color">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus debitis aut laborum quos culpa eaque molestiae, veritatis quidem sequi fugit omnis blanditiis numquam minima accusamus rem dolorem obcaecati suscipit ipsam! </p>
+
+    <div class="container">
+        <p> <!--style na abertura da TAG para uma estilização específica = CSS em linha-->
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus debitis aut laborum quos culpa eaque molestiae, veritatis quidem sequi fugit omnis blanditiis numquam minima accusamus rem dolorem obcaecati suscipit ipsam! </p>
+        
+        <img src="assets/img/reddead.jpeg" alt="Red Dead Redemption">
+    </div>
+
+</body>
+</html>
+
+<!-- 
+    Padrão CSS
+
+    Seletor {
+        propriedade: valor
+    }
+
+    Seletores = Representação dos elementos em tela
+    Propriedade = Atributo aplicado a um elemento HTML para especificar características/comportamentos, como por exemplo a propriedade font-size que modifica o tamanho da fonte
+    Valor: Conteúdo atribuído à propriedade
+
+    id = Identificador único para estilizar uma TAG individualmente
+    Class = Identificador que pode ser utilizado varias vezes em TAGS distintas
+
+    O CSS pode sobrescrever uma estilização com base em sua ordem de inserção, o CSS verifica a última propriedade modificada para sobrescrever a estilização acima, em outras palavras, o que está mais abaixo será prioritário
+    É possível utilizar o comando !important para "forçar" o CSS a atribuir aquele valor para todas as TAGS, independente de sua posição no código
+
+    DIV = uma "caixa" para guardar e organizar os elementos do HTML
+-->

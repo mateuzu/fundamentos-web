@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="helloWorld()">Clica em mim</button> <!-- button onclick="function()" = Definindo um evento para acionar uma função-->
+    </div>
+
+    <br><br>
+
+    <form>
+        <label for="nome"> Nome:</label><br>
+        <input id="nome" type="text" name="nome">
+        <br><br>
+        <button>Enviar</button>
+    </form>
+
+    <!-- JavaScript interno utilizando a TAG script, dentro do código HTML ao final da TAG Body-->
+    <script>
+        function helloWorld(){
+            alert("Hello World");
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+    Para acionar/chamar uma função JavaScript é necessário utilizar um evento.
+    Evento: Toda e qualquer ação que os usuários fazem dentro do site que disparam uma Função, como por exemplo, um clique em um botão dispara um pop-up
+    Todas as TAGS dentro do Body podem ser utilizadas como eventos
+
+    function helloWorld() {     -- Definindo a função 
+        alert("Hello World"); -- alert = Exibe um pop-up com a mensagem determinada na tela
+    }
+-->

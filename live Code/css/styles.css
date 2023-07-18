@@ -1,0 +1,40 @@
+/* CSS Externo para estilizações mais amplas */
+
+p{
+    font-size: 20px !important;
+}
+
+#p-first{ 
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.p-color{
+    color: crimson;
+    font-size: 50px;
+}
+
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+    border: 5px solid; color: purple;
+    padding: 20px;
+    margin: 20px;
+}
+
+/*
+    Flexbox = Organização de elementos
+    Display: Por padrão, o HTML utliza o display:block para manter os elementos organizados um embaixo do outro e da esquerda para direita, porém utilizando a propriedade display podemos modificar essa organização
+
+    display:flex = Deixa dois elementos um ao lado do outro
+    align-items: center = Alinha os elementos verticalmente | OBS: Só funciona com o display:flex
+    justify-content: space-around = Atribui um espaçamento horizontal entre os elementos dentro da div
+
+    Box Model: margin, border, padding
+    margin = espaçamento externo em relação aos outros elementos
+    border = limite do elemento
+    padding = espaçamento interno em relação à borda (limite)
+*/

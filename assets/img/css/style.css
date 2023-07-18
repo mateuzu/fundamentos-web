@@ -1,0 +1,90 @@
+/*
+Estilos da página index.html
+*/
+
+p{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    text-align: center;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+}
+
+#menu li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#menu li a:hover{
+    color:gold;
+}
+
+.p30{
+    padding: 30px;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+    padding: 20px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.menu-acima{
+    display: flex;
+    justify-content: right;
+}
+
+.menu-acima img{
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-acima img:hover{
+    transform: scale(1.4);
+}
+
+/*
+Estilos da página html.html
+*/
+
+
+/*
+Estilos da página css.html
+*/
+.cssimg{
+    width: 450px;
+    height: 280px;
+}
+
+.containercss{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*
+Estilos da página javascript.html
+*/

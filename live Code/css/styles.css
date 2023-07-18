@@ -25,6 +25,22 @@ p{
     margin: 20px;
 }
 
+.button:hover img{
+    transform: scale(1.2)
+}
+
+.button img{
+  width: 50px;
+  height: 50px;
+  transition: transform 0.1s ease-in-out;
+}
+
+.button{
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
+
 /*
     Flexbox = Organização de elementos
     Display: Por padrão, o HTML utliza o display:block para manter os elementos organizados um embaixo do outro e da esquerda para direita, porém utilizando a propriedade display podemos modificar essa organização

@@ -5,24 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS</title>
-    <link rel="stylesheet" href="assets/img/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div class="menu-acima">
-        <ul id="menu">
-            <li> <!-- target="_blank" = Abre uma nova guia para a URL referenciada-->
-                <a href="index.html"> <img class="tm-social" src="assets/img/front-end.png" alt=""></a>
-            </li> 
-            <li>
-                <a href="html.html"><img class="tm-social" src="assets/img/html-5.png" alt=""> </a>
-            </li>
-            <li>
-                <a href="css.html"> <img class="tm-social" src="assets/img/css-3.png" alt=""> </a>
-            </li>
-            <li>
-                <a href="javascript.html"> <img class="tm-social" src="assets/img/js.png" alt=""> </a>
-            </li>
-        </ul>
+    <div class="sidebar">
+        <div class="escuro">
+            <img class="tm-social" src="assets/img/modo-escuro.png" alt="" onclick="escuro()">
+        </div>
+        <div class="content">
+            <a href="index.html"><img class="tm-social" src="assets/img/front-end.png" alt=""></a>
+            <a href="html.html"><img class="tm-social" src="assets/img/html-5.png" alt=""></a>
+            <a href="css.html"><img class="tm-social" src="assets/img/css-3.png" alt=""></a>
+            <a href="javascript.html"><img class="tm-social" src="assets/img/js.png" alt=""></a>
+            <a href="contato.html"><img class="tm-social" src="assets/img/contato.png" alt=""></a>
+        </div>
     </div>
 
     <h1 class="center">Sobre o CSS</h1>
@@ -36,15 +32,16 @@
     <p>
         O CSS pode ser adicionado aos documentos HTML de três maneiras:
         <ul>
-            <li>Inline - usando o atributo style dentro dos elementos HTML</li>
-            <li>Interno - usando um elemento style na head da página </li>
-            <li>Externo - usando um elemento link para vincular a um arquivo CSS externo</li>
+            <li><p>Inline - usando o atributo style dentro dos elementos HTML</p></li>
+            <li><p>Interno - usando um elemento style na head da página</p></li>
+            <li><p>Externo - usando um elemento link para vincular a um arquivo CSS externo</p></li>
         </ul>
-        A maneira mais comum de adicionar CSS é manter os estilos em arquivos CSS externos
+        <p>A maneira mais comum de adicionar CSS é manter os estilos em arquivos CSS externos</p>
     </p>
 
     <div class="containercss">
         <div class="p-30">
+            <h2>Seletores</h2>
             <p>
                 Os seletores podem ser: uma tag, um id de uma tag ou uma classe, ele serve para especificar qual elemento ou grupo de elementos será modificado através das propriedades do CSS
             </p>

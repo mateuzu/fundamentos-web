@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+        <div class="sidebar">
+            <div class="escuro">
+                <img class="tm-social" src="assets/img/modo-escuro.png" alt="" onclick="escuro()">
+            </div>
+            <div class="content">
+                <a href="index.html"><img class="tm-social" src="assets/img/front-end.png" alt=""></a>
+                <a href="html.html"><img class="tm-social" src="assets/img/html-5.png" alt=""></a>
+                <a href="css.html"><img class="tm-social" src="assets/img/css-3.png" alt=""></a>
+                <a href="javascript.html"><img class="tm-social" src="assets/img/js.png" alt=""></a>
+                <a href="contato.html"><img class="tm-social" src="assets/img/contato.png" alt=""></a>
+            </div>
+        </div>
+
+    <h1 class="center">Entre em contato comigo</h1>
+    <div class="container-contato">
+        <div>
+            <form>
+                <label for="nome"> Nome:</label> <br> <!-- label for"x" = referenciar o input que irá fazer parte-->
+                <input type="text" id="nome" onkeyup="validaNome()"> <!--onkeyup = Evento ocorre ao soltar uma tecla-->
+                <div id="txtNome"></div> 
+                <br>
+                <label for="email"> E-mail:</label> <br>
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div> 
+                <br>
+                <label for="assunto"> Assunto:</label> <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"> </textarea> <!-- textarea = area de texto, campo destinado aos textos com maior quantidade de caracteres-->
+                <div id="txtAssunto"></div>
+                <br>
+                <br>
+                <button onclick="enviar()">Enviar</button>
+            </form>    
+        </div>
+        
+        <div>
+            <p>Rue Cambronne</p>
+            <p>Paris - FRA</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7587539036776!2d2.299833476373746!3d48.84374017133012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6703c673b5d6f%3A0x7eb411bdbc02bfe1!2sRue%20Cambronne%2C%2075015%20Paris%2C%20Fran%C3%A7a!5e0!3m2!1spt-BR!2sbr!4v1689350439042!5m2!1spt-BR!2sbr"
+                width="400" 
+                height="250" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa">
+            </iframe>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+<!--
+    EVENTOS RELACIONADOS À TECLADO:
+    onkeyup = Evento ocorre ao soltar uma tecla
+    onkeudown = Evento ocorre ao "afundar" uma tecla a primeira vez
+    onkeydown = Evento ocorre ao pressionar uma tecla
+
+    onmousemove = Evento ocorre quando o cursor passar por cima do elemento
+    onmouseout = Evento ocorre quando o cursor sair do elemento
+-->

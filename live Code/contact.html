@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div>
-        <button onclick="helloWorld()">Clica em mim</button> <!-- button onclick="function()" = Definindo um evento para acionar uma função-->
+        <button class="button" onclick="helloWorld()"><img src="assets/img/aperte-o-botao.png" alt=""></button> <!-- button onclick="function()" = Definindo um evento para acionar uma função-->
     </div>
 
     <br><br>
@@ -16,15 +17,18 @@
         <label for="nome"> Nome:</label><br>
         <input id="nome" type="text" name="nome">
         <br><br>
-        <button>Enviar</button>
+        <button class="button" onclick="enviar()"><img src="assets/img/salvar-arquivo.png" alt=""></button> <!--Evento para acionar a função enviar-->
     </form>
 
-    <!-- JavaScript interno utilizando a TAG script, dentro do código HTML ao final da TAG Body-->
+
+    <script src="js/scripts.js"></script> <!-- Incorporando JavaScript Externo -->
+
+    <!-- JavaScript interno utilizando a TAG script, dentro do código HTML ao final da TAG Body
     <script>
         function helloWorld(){
             alert("Hello World");
         }
-    </script>
+    </script> -->
 
 </body>
 </html>
@@ -37,4 +41,14 @@
     function helloWorld() {     -- Definindo a função 
         alert("Hello World"); -- alert = Exibe um pop-up com a mensagem determinada na tela
     }
+
+    DOM = Modelo de objetos de documentos, útil para ajudar na manipulação das informações/elementos do HTML através do JavaScript, trazendo mais interação e fluidez ao site
+
+    Arvore de elementos: Representação visual do HTML no navegador, toda TAG do HTML constrói um elemento em tela, por conta disso é chamada de Àrvore de elementos
+    
+    MODELO ARVORE DE ELEMENTOS
+    Window = Janela do navegador
+        Location = Objeto contendo informações sobre hospedagem, metadados e URL de um site, etc que pode ser acessado dinamicamente com JavaScript
+        History = Objeto contendo histórico de navegação que pode ser acessado dinamicamente com JavaScript
+        Document = Objeto que permite que o JavaScript manipule dinamicamente os elementos HTML
 -->
